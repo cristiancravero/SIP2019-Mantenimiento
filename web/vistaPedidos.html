@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="controllers/index1.php" method="post">
+        <fieldset>
+            <legend>Pedidos</legend>
+            <label for="Nombre">Filtrar pedido por:</label>
+            <select name="filtro">
+                <option value="IDPedido">ID</option>
+                <option value="FechaInicio">Fecha Inicio</option>
+                <option value="Sector">Sector</option>
+                <option value="Cantidad">Cantidad de Tareas</option>
+                <option value="Estado">Estado</option>
+            </select>
+            <input type="text" name="firstname">
+            <button type="button" onclick="alert('Hello World!')">Filtrar</button>
+        </fieldset>
+
+        <button class="botonP" type="button" onclick="alert('Hello World!')">Alta Pedido</button>
+        <button class="botonP" type="button" onclick="alert('Hello World!')">Ver Pedido</button>
+        <button class="botonP" type="button" onclick="alert('Hello World!')">Modificar Pedido</button>
+
+        <br>
+        <div id="div1">
+            <table class="tabla" border="2">
+                <colgroup>
+                    <col span="2" class="fechas" />
+                    <col span="6" class="trabajos" />
+
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th colspan="1" rowspan="1" scope="col">N° Pedido</th>
+                        <th colspan="1" rowspan="1" scope="col">Sector</th>
+                        <th colspan="1" rowspan="1" scope="col">Fecha Inicio</th>
+                        <th colspan="1" rowspan="1" scope="col">Tareas Asignadas</th>
+                        <th colspan="1" rowspan="1" scope="col">Estado</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <button type="button" onclick="alert('Hello World!')">Salir</button>
+</body>
+
+</html>
